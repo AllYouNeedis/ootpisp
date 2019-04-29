@@ -7,24 +7,40 @@ import javax.swing.*;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
-class CreateAddingWindow {
-    private final String WhereIsI = "oop.objects.";
-    CreateAddingWindow(CreatableObjects E, ObjectManipulator objectManipulator, JFrame owner){
-        ArrayList<Field> AllFields;
-        String name = new String(WhereIsI);
+class WindowContext {
+    private ArrayList<Field> allFields;
+    private String frameName;
+    private CreatableObjects E;
+    WindowContext(CreatableObjects E){
+        this.E = E;
+        String name = "oop.objects.";
         name = name.concat(E.name());
         try {
             Class MyClass = Class.forName(name);
-            AllFields = getFields(MyClass);
-            AddingWindow window = new AddingWindow(AllFields,E.name(),owner);
-            window.setSize(600,400);
-            window.AddButtonAction(E,objectManipulator);
-            window.setVisible(true);
-
+            allFields = getFields(MyClass);
+            frameName = E.name();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    WindowContext(Object object) {
+        Class MyClass = object.getClass();
+        allFields = getFields(MyClass);
+    }
+
+    public  ArrayList<Field> getAllFields() {
+        return allFields;
+    }
+
+    public String getFrameName() {
+        return frameName;
+    }
+
+    public CreatableObjects getE() {
+        return E;
     }
 
     private ArrayList<Field> getFields(Class MyClass) {

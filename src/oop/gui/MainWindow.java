@@ -34,7 +34,13 @@ public class MainWindow extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
                     int index = list.locationToIndex(e.getPoint());
-
+                    Object type = objects.getObjects().get(index);
+                    String[] a = type.getClass().getTypeName().split("[.]");
+                    WindowContext context = new WindowContext(type);
+                    ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,type);
+                    window.setSize(600,400);
+                    window.setVisible(true);
+                    redraw();
                 }
             }
         });
@@ -48,7 +54,11 @@ public class MainWindow extends JFrame {
         JButton addButton = new JButton("Добавить");
         addButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new CreateAddingWindow(CreatableObjects.values()[comboBox.getSelectedIndex()],objectManipulator,MainWindow.this);
+                WindowContext context = new WindowContext(CreatableObjects.values()[comboBox.getSelectedIndex()]);
+                AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this);
+                window.setSize(600,400);
+                window.AddButtonAction(context.getE(),objectManipulator);
+                window.setVisible(true);
                 redraw();
             }
         });

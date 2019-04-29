@@ -12,7 +12,6 @@ public class ObjectManipulator {
             return -1;
         } else {
             DataContext.getObjects().add(NewObject);
-
             return 0;
         }
     }

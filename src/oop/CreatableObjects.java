@@ -1,6 +1,7 @@
 package oop;
 
 import oop.factories.Creatable;
+import oop.objects.SexPool;
 
 public enum CreatableObjects {
     Spearman("Копейщик"),

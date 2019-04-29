@@ -19,6 +19,16 @@ public enum SexPool {
         return result;
     }
 
+    public int getNumberFromSex() {
+        int res = 0;
+        for (SexPool el: SexPool.values()) {
+            if (el == this)
+                return res;
+            res++;
+        }
+        return -1;
+    }
+
     private static int getSize() {
         int result = 0;
         for (SexPool el : SexPool.values()) {
