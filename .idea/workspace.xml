@@ -42,12 +42,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="95" />
-          <entry key="java" value="11539" />
+          <entry key="java" value="11540" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11539" />
+          <entry key="JAVA" value="11540" />
           <entry key="PLAIN_TEXT" value="95" />
         </counts>
       </usages-collector>
@@ -168,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,10 +248,10 @@
         <option value="$PROJECT_DIR$/src/oop/ApplicationDataContext.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/CreateAddingWindow.java" />
+        <option value="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" />
       </list>
     </option>
   </component>
@@ -303,7 +303,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556531584595" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556531904133" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
@@ -350,16 +350,15 @@
       <workItem from="1555581847797" duration="47844000" />
       <workItem from="1555676608353" duration="3020000" />
       <workItem from="1555949139537" duration="225000" />
-      <workItem from="1556478734890" duration="11478000" />
+      <workItem from="1556478734890" duration="11758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75410000" />
+    <option name="totallyTimeSpent" value="75690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -716,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
