@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d03dacd4-1802-4c5e-b3d7-43a27b0ded98" name="Default Changelist" comment="" />
+    <list default="true" id="d03dacd4-1802-4c5e-b3d7-43a27b0ded98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/ApplicationDataContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/CreatableObjects.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/ObjectManipulator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/ArcherMaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/BattallionMaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/CatapultMaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/Creatable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/Factory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/SpearmanMaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/SwordmanMaker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/AddingWindow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/AddingWindow$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/AddingWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/ChangingWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/CreateAddingWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Archer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Battalion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Catapult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Human.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/SexPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Soilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Spearman.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/lab2/oop/objects/Swordman.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/ApplicationDataContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/CreatableObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/ObjectManipulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/BattallionMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/CatapultMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/Creatable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/gui/AddingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/gui/CreateAddingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/gui/MainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Archer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Battalion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Catapult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/SexPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Soilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Spearman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop/objects/Swordman.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +199,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oop/gui/CreateAddingWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -162,10 +223,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state>
               <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -196,6 +257,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -261,6 +325,9 @@
     <option name="width" value="1082" />
     <option name="height" value="778" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -284,20 +351,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="oop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -309,7 +362,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556530696492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556530997597" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
@@ -356,12 +409,12 @@
       <workItem from="1555581847797" duration="47844000" />
       <workItem from="1555676608353" duration="3020000" />
       <workItem from="1555949139537" duration="225000" />
-      <workItem from="1556478734890" duration="10486000" />
+      <workItem from="1556478734890" duration="10786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74418000" />
+    <option name="totallyTimeSpent" value="74718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -659,16 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -722,6 +765,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
