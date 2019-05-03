@@ -18,4 +18,22 @@ public class CatapultMaker implements Creatable {
             return -1;
         }
     }
+
+    @Override
+    public int setObjectFields(CreatableObjects E, HashMap<Integer, Object> data) {
+        try {
+            Catapult object = (Catapult)(data.get(0));
+            int Number = Integer.parseInt(data.get(1).toString());
+            int FiringDistance = Integer.parseInt(data.get(2).toString());
+            int FiringSpeed = Integer.parseInt(data.get(3).toString());
+            object.setNumber(Number);
+            object.setFiringDistance(FiringDistance);
+            object.setFiringSpeed(FiringSpeed);
+        } catch (Exception e) {
+            return -1;
+        }
+
+        return 0;
+    }
+
 }

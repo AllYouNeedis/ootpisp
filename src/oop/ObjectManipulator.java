@@ -16,7 +16,20 @@ public class ObjectManipulator {
         }
     }
 
+    public int set(CreatableObjects E,HashMap<Integer,Object> Data) {
+        Object newObject = ObjectFactory.setObjectFields(E,Data);
+        if (newObject.equals(-1)) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+
     public ObjectManipulator(ApplicationDataContext dataContext) {
         this.DataContext = dataContext;
+    }
+
+    public ApplicationDataContext getDataContext() {
+        return DataContext;
     }
 }

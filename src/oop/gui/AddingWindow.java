@@ -1,5 +1,6 @@
 package oop.gui;
 
+import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
 import oop.objects.SexPool;
@@ -17,9 +18,10 @@ class AddingWindow extends JDialog {
     private Map<Integer,JTextField> TextFields = new HashMap<>();
     private Map<Integer,JComboBox> ComboBoxes = new HashMap<>();
     private Map<Integer,JCheckBox> CheckBoxes = new HashMap<>();
+    private Map<Integer,JList> Lists = new HashMap<>();
     private Map<String,JButton> Buttons = new HashMap<>();
 
-    AddingWindow(ArrayList<Field> Fields, String FrameName,JFrame owner) {
+    AddingWindow(ArrayList<Field> Fields, String FrameName,JFrame owner, ApplicationDataContext applicationDataContext) {
         super(owner,FrameName,true);
         int i = 0;
         JPanel MainPanel = new JPanel();
@@ -39,6 +41,17 @@ class AddingWindow extends JDialog {
                     TextFields.put(i,new JTextField(20));
                     MainPanel.add(TextFields.get(i));
                 }
+            } else if (type.getName().equals("java.util.ArrayList")) {
+                ListModel model = new DefaultListModel();
+                Lists.put(i,new JList(model));
+                Integer j;
+                for (j = 0; j < applicationDataContext.getObjects().size(); j++) {
+                    if (!applicationDataContext.getObjects().get(j).getClass().getName().equals("oop.objects.Battalion")) {
+                        String[] temp = applicationDataContext.getObjects().get(j).getClass().getName().split("[.]");
+                        ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
+                    }
+                }
+                MainPanel.add(Lists.get(i));
             } else {
                 TextFields.put(i,new JTextField(20));
                 MainPanel.add(TextFields.get(i));
@@ -73,6 +86,20 @@ class AddingWindow extends JDialog {
                 for (Map.Entry<Integer,JCheckBox> entry : CheckBoxes.entrySet()) {
                     Data.put(entry.getKey(),entry.getValue().isSelected());
                 }
+                for (Map.Entry<Integer,JList> entry : Lists.entrySet()) {
+                    int[] indexes = entry.getValue().getSelectedIndices();
+                    ArrayList<Object> selectedValues = new ArrayList<>();
+                    for (int index: indexes) {
+                        String value = entry.getValue().getModel().getElementAt(index).toString();
+                        String[] in = value.split(" ");
+                        int indexInObjects = Integer.parseInt(in[1]);
+                        selectedValues.add(objectManipulator.getDataContext().getObjects().get(indexInObjects));
+                    }
+                    Data.put(entry.getKey(),selectedValues);
+                }
+
+
+
                 objectManipulator.add(E,Data);
                 setVisible(false);
                 dispose();

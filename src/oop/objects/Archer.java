@@ -4,8 +4,8 @@ public class Archer extends Soilder {
     private int FiringDistance;
     private int FiringSpeed;
 
-    public Archer(String name, String surname, int age, SexPool sex, int serviceTime, int salary, boolean isCaptain, int firingDistance, int firingSpeed) {
-        super(name, surname, age, sex, serviceTime, salary, isCaptain);
+    public Archer(String name, String surname, int age, SexPool sex, int serviceTime, int salary, int firingDistance, int firingSpeed) {
+        super(name, surname, age, sex, serviceTime, salary);
         FiringDistance = firingDistance;
         FiringSpeed = firingSpeed;
     }

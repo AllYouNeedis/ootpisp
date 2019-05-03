@@ -37,8 +37,9 @@ public class MainWindow extends JFrame {
                     Object type = objects.getObjects().get(index);
                     String[] a = type.getClass().getTypeName().split("[.]");
                     WindowContext context = new WindowContext(type);
-                    ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,type);
+                    ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,type,objects);
                     window.setSize(600,400);
+                    window.AddButtonAction(type,CreatableObjects.valueOf(a[a.length-1]),objectManipulator);
                     window.setVisible(true);
                     redraw();
                 }
@@ -55,7 +56,7 @@ public class MainWindow extends JFrame {
         addButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 WindowContext context = new WindowContext(CreatableObjects.values()[comboBox.getSelectedIndex()]);
-                AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this);
+                AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this,objects);
                 window.setSize(600,400);
                 window.AddButtonAction(context.getE(),objectManipulator);
                 window.setVisible(true);
