@@ -34,12 +34,12 @@ public class MainWindow extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
                     int index = list.locationToIndex(e.getPoint());
-                    Object type = objects.getObjects().get(index);
-                    String[] a = type.getClass().getTypeName().split("[.]");
-                    WindowContext context = new WindowContext(type);
-                    ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,type,objects);
+                    Object object = objects.getObjects().get(index);
+                    String[] a = object.getClass().getTypeName().split("[.]");
+                    WindowContext context = new WindowContext(object);
+                    ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,object,objectManipulator);
                     window.setSize(600,400);
-                    window.AddButtonAction(type,CreatableObjects.valueOf(a[a.length-1]),objectManipulator);
+                    window.AddButtonAction(object,CreatableObjects.valueOf(a[a.length-1]),objectManipulator);
                     window.setVisible(true);
                     redraw();
                 }
@@ -56,7 +56,7 @@ public class MainWindow extends JFrame {
         addButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 WindowContext context = new WindowContext(CreatableObjects.values()[comboBox.getSelectedIndex()]);
-                AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this,objects);
+                AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this,objectManipulator);
                 window.setSize(600,400);
                 window.AddButtonAction(context.getE(),objectManipulator);
                 window.setVisible(true);

@@ -21,7 +21,7 @@ class AddingWindow extends JDialog {
     private Map<Integer,JList> Lists = new HashMap<>();
     private Map<String,JButton> Buttons = new HashMap<>();
 
-    AddingWindow(ArrayList<Field> Fields, String FrameName,JFrame owner, ApplicationDataContext applicationDataContext) {
+    AddingWindow(ArrayList<Field> Fields, String FrameName,JFrame owner, ObjectManipulator objectManipulator) {
         super(owner,FrameName,true);
         int i = 0;
         JPanel MainPanel = new JPanel();
@@ -45,9 +45,10 @@ class AddingWindow extends JDialog {
                 ListModel model = new DefaultListModel();
                 Lists.put(i,new JList(model));
                 Integer j;
-                for (j = 0; j < applicationDataContext.getObjects().size(); j++) {
-                    if (!applicationDataContext.getObjects().get(j).getClass().getName().equals("oop.objects.Battalion")) {
-                        String[] temp = applicationDataContext.getObjects().get(j).getClass().getName().split("[.]");
+                ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
+                for (j = 0; j < objects.size(); j++) {
+                    if (!objects.get(j).getClass().getName().equals("oop.objects.Battalion")) {
+                        String[] temp = objects.get(j).getClass().getName().split("[.]");
                         ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
                     }
                 }
@@ -97,8 +98,6 @@ class AddingWindow extends JDialog {
                     }
                     Data.put(entry.getKey(),selectedValues);
                 }
-
-
 
                 objectManipulator.add(E,Data);
                 setVisible(false);

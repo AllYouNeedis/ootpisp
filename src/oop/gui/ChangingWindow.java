@@ -21,7 +21,7 @@ public class ChangingWindow extends JDialog {
     private Map<Integer,JCheckBox> CheckBoxes = new HashMap<>();
     private Map<Integer,JList> Lists = new HashMap<>();
     private Map<String,JButton> Buttons = new HashMap<>();
-    public ChangingWindow(ArrayList<Field> Fields, JFrame owner, Object object, ApplicationDataContext applicationDataContext) {
+    public ChangingWindow(ArrayList<Field> Fields, JFrame owner, Object object, ObjectManipulator objectManipulator) {
         super(owner,"изменяем",true);
         int i = 1;
         JPanel MainPanel = new JPanel();
@@ -56,11 +56,12 @@ public class ChangingWindow extends JDialog {
                     Integer j;
                     int indexInNewList = 0;
                     ArrayList<Integer> indexes = new ArrayList<>();
-                    for (j = 0; j < applicationDataContext.getObjects().size(); j++) {
-                        if (!applicationDataContext.getObjects().get(j).getClass().getName().equals("oop.objects.Battalion")) {
-                            String[] temp = applicationDataContext.getObjects().get(j).getClass().getName().split("[.]");
+                    ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
+                    for (j = 0; j < objects.size(); j++) {
+                        if (!objects.get(j).getClass().getName().equals("oop.objects.Battalion")) {
+                            String[] temp = objects.get(j).getClass().getName().split("[.]");
                             ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
-                            if (((Battalion)object).getComposition().contains(applicationDataContext.getObjects().get(j))) {
+                            if (((Battalion)object).getComposition().contains(objects.get(j))) {
                                 indexes.add(indexInNewList++);
                             }
                         }

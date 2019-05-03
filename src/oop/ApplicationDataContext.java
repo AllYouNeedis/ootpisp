@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class ApplicationDataContext {
     private ArrayList<Object> objects;
 
-    public ApplicationDataContext() {
+    ApplicationDataContext() {
         objects = new ArrayList<>();
     }
     public ArrayList<Object> getObjects() {

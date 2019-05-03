@@ -9,15 +9,28 @@ import java.util.HashMap;
 public class BattallionMaker implements Creatable {
     @Override
     public Object createObject(CreatableObjects E, HashMap<Integer, Object> data) {
-        ArrayList<Object> links = (ArrayList<Object>)(data.get(0));
-        return new Battalion(links);
+        try {
+            String name = data.get(0).toString();
+            ArrayList<Object> links = (ArrayList<Object>)(data.get(1));
+            return new Battalion(links,name);
+        } catch (Exception e) {
+            return -1;
+        }
+
     }
 
     @Override
     public int setObjectFields(CreatableObjects E, HashMap<Integer, Object> data) {
-        Battalion object = (Battalion)data.get(0);
-        ArrayList<Object> links = (ArrayList<Object>)(data.get(1));
-        object.setComposition(links);
+        try {
+            Battalion object = (Battalion)data.get(0);
+            String name = data.get(1).toString();
+            ArrayList<Object> links = (ArrayList<Object>)(data.get(2));
+            object.setComposition(links);
+            object.setName(name);
+        }   catch (Exception e) {
+            return -1;
+        }
+
 
         return 0;
     }

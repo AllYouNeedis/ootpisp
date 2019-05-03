@@ -31,11 +31,11 @@ class WindowContext {
         allFields = getFields(MyClass);
     }
 
-    public  ArrayList<Field> getAllFields() {
+    ArrayList<Field> getAllFields() {
         return allFields;
     }
 
-    public String getFrameName() {
+    String getFrameName() {
         return frameName;
     }
 

@@ -25,7 +25,7 @@ public class ObjectManipulator {
         }
     }
 
-    public ObjectManipulator(ApplicationDataContext dataContext) {
+    ObjectManipulator(ApplicationDataContext dataContext) {
         this.DataContext = dataContext;
     }
 

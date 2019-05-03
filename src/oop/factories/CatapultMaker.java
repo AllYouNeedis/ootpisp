@@ -3,7 +3,6 @@ package oop.factories;
 import oop.CreatableObjects;
 import oop.objects.Catapult;
 
-import java.text.ParseException;
 import java.util.HashMap;
 
 public class CatapultMaker implements Creatable {

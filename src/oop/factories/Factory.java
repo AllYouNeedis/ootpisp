@@ -1,12 +1,10 @@
 package oop.factories;
 
-import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import java.util.HashMap;
 
 public class Factory implements Creatable {
     private HashMap<CreatableObjects,Creatable> Makers;
-    private ApplicationDataContext DataStorage;
     @Override
     public Object createObject(CreatableObjects E, HashMap<Integer,Object> data) {
         return Makers.get(E).createObject(E, data);
