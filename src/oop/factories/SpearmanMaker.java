@@ -10,6 +10,8 @@ public class SpearmanMaker implements Creatable {
     @Override
     public Object createObject(CreatableObjects E, HashMap<Integer, Object> data) {
         try {
+            if (data.size() != 7)
+                return -1;
             String Name = data.get(0).toString();
             String Surname = data.get(1).toString();
             int Age = Integer.parseInt(data.get(2).toString());
@@ -26,6 +28,8 @@ public class SpearmanMaker implements Creatable {
     @Override
     public int setObjectFields(CreatableObjects E, HashMap<Integer, Object> data) {
         try {
+            if (data.size() != 8)
+                return -1;
             Spearman object = (Spearman) data.get(0);
             String name = data.get(1).toString();
             String surname = data.get(2).toString();

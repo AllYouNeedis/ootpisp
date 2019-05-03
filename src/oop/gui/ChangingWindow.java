@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ChangingWindow extends JDialog {
+    private HashMap<Integer,Integer> indexConformity;
     private Map<Integer,JTextField> TextFields = new HashMap<>();
     private Map<Integer,JComboBox> ComboBoxes = new HashMap<>();
     private Map<Integer,JCheckBox> CheckBoxes = new HashMap<>();
@@ -55,19 +56,34 @@ public class ChangingWindow extends JDialog {
                     Lists.put(i,new JList(model));
                     Integer j;
                     int indexInNewList = 0;
-                    ArrayList<Integer> indexes = new ArrayList<>();
+                    boolean isAlreadyUsed;
+                    ArrayList<Integer> mustBeSelected = new ArrayList<>();
                     ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
+                    ArrayList<Battalion> battalions = objectManipulator.getBattalions();
+                    indexConformity = new HashMap<>();
                     for (j = 0; j < objects.size(); j++) {
+                        isAlreadyUsed = false;
                         if (!objects.get(j).getClass().getName().equals("oop.objects.Battalion")) {
                             String[] temp = objects.get(j).getClass().getName().split("[.]");
-                            ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
-                            if (((Battalion)object).getComposition().contains(objects.get(j))) {
-                                indexes.add(indexInNewList++);
+                            for (Battalion battalion : battalions) {
+                                if (!battalion.equals(object)) {
+                                    if (battalion.getComposition().contains(objects.get(j))) {
+                                        isAlreadyUsed = true;
+                                    }
+                                }
+                            }
+                            if (!isAlreadyUsed) {
+                                indexConformity.put(indexInNewList,j);
+                                ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
+                                if (((Battalion)object).getComposition().contains(objects.get(j))) {
+                                    mustBeSelected.add(indexInNewList);
+                                }
+                                indexInNewList++;
                             }
                         }
                     }
-                    int[] a = new int[indexes.size()];
-                    for (j = 0; j<indexes.size(); j++) {a[j] = indexes.get(j);}
+                    int[] a = new int[mustBeSelected.size()];
+                    for (j = 0; j<mustBeSelected.size(); j++) {a[j] = mustBeSelected.get(j);}
                     Lists.get(i).setSelectedIndices(a);
                     MainPanel.add(Lists.get(i));
                 } else {
@@ -114,10 +130,7 @@ public class ChangingWindow extends JDialog {
                     int[] indexes = entry.getValue().getSelectedIndices();
                     ArrayList<Object> selectedValues = new ArrayList<>();
                     for (int index: indexes) {
-                        String value = entry.getValue().getModel().getElementAt(index).toString();
-                        String[] in = value.split(" ");
-                        int indexInObjects = Integer.parseInt(in[1]);
-                        selectedValues.add(objectManipulator.getDataContext().getObjects().get(indexInObjects));
+                        selectedValues.add(objectManipulator.getDataContext().getObjects().get(indexConformity.get(index)));
                     }
                     Data.put(entry.getKey(),selectedValues);
                 }

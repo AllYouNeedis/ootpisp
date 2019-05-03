@@ -10,6 +10,8 @@ public class BattallionMaker implements Creatable {
     @Override
     public Object createObject(CreatableObjects E, HashMap<Integer, Object> data) {
         try {
+            if (data.size() != 2)
+                return -1;
             String name = data.get(0).toString();
             ArrayList<Object> links = (ArrayList<Object>)(data.get(1));
             return new Battalion(links,name);
@@ -22,6 +24,8 @@ public class BattallionMaker implements Creatable {
     @Override
     public int setObjectFields(CreatableObjects E, HashMap<Integer, Object> data) {
         try {
+            if (data.size() != 3)
+                return -1;
             Battalion object = (Battalion)data.get(0);
             String name = data.get(1).toString();
             ArrayList<Object> links = (ArrayList<Object>)(data.get(2));

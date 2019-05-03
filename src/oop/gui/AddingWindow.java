@@ -3,6 +3,7 @@ package oop.gui;
 import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
+import oop.objects.Battalion;
 import oop.objects.SexPool;
 
 import javax.swing.*;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class AddingWindow extends JDialog {
+    private HashMap<Integer,Integer> indexConformity;
     private Map<Integer,JTextField> TextFields = new HashMap<>();
     private Map<Integer,JComboBox> ComboBoxes = new HashMap<>();
     private Map<Integer,JCheckBox> CheckBoxes = new HashMap<>();
@@ -45,11 +47,25 @@ class AddingWindow extends JDialog {
                 ListModel model = new DefaultListModel();
                 Lists.put(i,new JList(model));
                 Integer j;
+                int indexInNewList = 0;
+                boolean isAlreadyUsed;
+                ArrayList<Integer> mustBeSelected = new ArrayList<>();
                 ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
+                ArrayList<Battalion> battalions = objectManipulator.getBattalions();
+                indexConformity = new HashMap<>();
                 for (j = 0; j < objects.size(); j++) {
+                    isAlreadyUsed = false;
                     if (!objects.get(j).getClass().getName().equals("oop.objects.Battalion")) {
                         String[] temp = objects.get(j).getClass().getName().split("[.]");
-                        ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
+                        for (Battalion battalion : battalions) {
+                            if (battalion.getComposition().contains(objects.get(j))) {
+                                isAlreadyUsed = true;
+                            }
+                        }
+                        if (!isAlreadyUsed) {
+                            indexConformity.put(indexInNewList++,j);
+                            ((DefaultListModel) model).addElement((CreatableObjects.GetNameFromString(temp[temp.length-1])).concat(" ".concat(j.toString())));
+                        }
                     }
                 }
                 MainPanel.add(Lists.get(i));
@@ -91,10 +107,7 @@ class AddingWindow extends JDialog {
                     int[] indexes = entry.getValue().getSelectedIndices();
                     ArrayList<Object> selectedValues = new ArrayList<>();
                     for (int index: indexes) {
-                        String value = entry.getValue().getModel().getElementAt(index).toString();
-                        String[] in = value.split(" ");
-                        int indexInObjects = Integer.parseInt(in[1]);
-                        selectedValues.add(objectManipulator.getDataContext().getObjects().get(indexInObjects));
+                        selectedValues.add(objectManipulator.getDataContext().getObjects().get(indexConformity.get(index)));
                     }
                     Data.put(entry.getKey(),selectedValues);
                 }

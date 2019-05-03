@@ -1,6 +1,9 @@
 package oop;
 
 import oop.factories.Factory;
+import oop.objects.Battalion;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ObjectManipulator {
@@ -31,5 +34,15 @@ public class ObjectManipulator {
 
     public ApplicationDataContext getDataContext() {
         return DataContext;
+    }
+
+    public ArrayList<Battalion> getBattalions() {
+        ArrayList<Object> allObjects = DataContext.getObjects();
+        ArrayList<Battalion> result = new ArrayList<>();
+        for (Object object : allObjects) {
+            if (object.getClass().getName().equals("oop.objects.Battalion"))
+                result.add((Battalion)object);
+        }
+        return result;
     }
 }
