@@ -108,7 +108,6 @@ public class ChangingWindow extends JDialog {
         Buttons.put("AddButton",new JButton("Изменить"));
 
         MainPanel.add(Buttons.get("AddButton"));
-        pack();
         getContentPane().add(MainPanel);
     }
 

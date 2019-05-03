@@ -13,6 +13,8 @@ public class Main {
             public void run() {
                 MainWindow frame = new MainWindow(allObjects,objectManipulator);
                 frame.setSize(600,400);
+                Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+                frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
             }
         });
 

@@ -40,6 +40,8 @@ public class MainWindow extends JFrame {
                     ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,object,objectManipulator);
                     window.setSize(600,400);
                     window.AddButtonAction(object,CreatableObjects.valueOf(a[a.length-1]),objectManipulator);
+                    Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+                    window.setLocation(dim.width/2-window.getSize().width/2, dim.height/2-window.getSize().height/2);
                     window.setVisible(true);
                     redraw();
                 }
@@ -59,6 +61,8 @@ public class MainWindow extends JFrame {
                 AddingWindow window = new AddingWindow(context.getAllFields(),context.getFrameName(),MainWindow.this,objectManipulator);
                 window.setSize(600,400);
                 window.AddButtonAction(context.getE(),objectManipulator);
+                Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+                window.setLocation(dim.width/2-window.getSize().width/2, dim.height/2-window.getSize().height/2);
                 window.setVisible(true);
                 redraw();
             }
@@ -80,7 +84,6 @@ public class MainWindow extends JFrame {
         buttonPanel.add(removeButton,BorderLayout.EAST);
 
         pack();
-        redraw();
         getContentPane().add(mainPanel);
         this.setVisible(true);
     }

@@ -1,6 +1,5 @@
 package oop.gui;
 
-import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
 import oop.objects.Battalion;

@@ -32,13 +32,13 @@ public class CatapultMaker implements Creatable {
             if (data.size() != 4)
                 return -1;
             Catapult object = (Catapult)(data.get(0));
-            int number = Integer.parseInt(data.get(0).toString());
+            int number = Integer.parseInt(data.get(1).toString());
             if (number < 0)
                 return -1;
-            int firingDistance = Integer.parseInt(data.get(1).toString());
+            int firingDistance = Integer.parseInt(data.get(2).toString());
             if (firingDistance < 0)
                 return -1;
-            int firingSpeed = Integer.parseInt(data.get(2).toString());
+            int firingSpeed = Integer.parseInt(data.get(3).toString());
             if (firingSpeed < 0)
                 return -1;
             object.setNumber(number);
