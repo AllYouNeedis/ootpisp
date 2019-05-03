@@ -11,10 +11,16 @@ public class CatapultMaker implements Creatable {
         try {
             if (data.size() != 3)
                 return -1;
-            int Number = Integer.parseInt(data.get(0).toString());
-            int FiringDistance = Integer.parseInt(data.get(1).toString());
-            int FiringSpeed = Integer.parseInt(data.get(2).toString());
-            return new Catapult(Number,FiringDistance,FiringSpeed);
+            int number = Integer.parseInt(data.get(0).toString());
+            if (number < 0)
+                return -1;
+            int firingDistance = Integer.parseInt(data.get(1).toString());
+            if (firingDistance < 0)
+                return -1;
+            int firingSpeed = Integer.parseInt(data.get(2).toString());
+            if (firingSpeed < 0)
+                return -1;
+            return new Catapult(number,firingDistance,firingSpeed);
         } catch (Exception e) {
             return -1;
         }
@@ -26,12 +32,18 @@ public class CatapultMaker implements Creatable {
             if (data.size() != 4)
                 return -1;
             Catapult object = (Catapult)(data.get(0));
-            int Number = Integer.parseInt(data.get(1).toString());
-            int FiringDistance = Integer.parseInt(data.get(2).toString());
-            int FiringSpeed = Integer.parseInt(data.get(3).toString());
-            object.setNumber(Number);
-            object.setFiringDistance(FiringDistance);
-            object.setFiringSpeed(FiringSpeed);
+            int number = Integer.parseInt(data.get(0).toString());
+            if (number < 0)
+                return -1;
+            int firingDistance = Integer.parseInt(data.get(1).toString());
+            if (firingDistance < 0)
+                return -1;
+            int firingSpeed = Integer.parseInt(data.get(2).toString());
+            if (firingSpeed < 0)
+                return -1;
+            object.setNumber(number);
+            object.setFiringDistance(firingDistance);
+            object.setFiringSpeed(firingSpeed);
         } catch (Exception e) {
             return -1;
         }

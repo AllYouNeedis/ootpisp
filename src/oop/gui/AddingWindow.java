@@ -112,7 +112,9 @@ class AddingWindow extends JDialog {
                     Data.put(entry.getKey(),selectedValues);
                 }
 
-                objectManipulator.add(E,Data);
+                if (objectManipulator.add(E,Data) == -1) {
+                    JOptionPane.showMessageDialog(AddingWindow.this,"что-то вы ввели не так, попробуйте еще раз","ошибка!!",JOptionPane.WARNING_MESSAGE);
+                }
                 setVisible(false);
                 dispose();
             }

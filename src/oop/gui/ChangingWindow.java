@@ -135,7 +135,9 @@ public class ChangingWindow extends JDialog {
                     Data.put(entry.getKey(),selectedValues);
                 }
                 Data.put(0,object);
-                objectManipulator.set(E,Data);
+                if (objectManipulator.set(E,Data) == -1) {
+                    JOptionPane.showMessageDialog(ChangingWindow.this,"что-то вы ввели не так, попробуйте еще раз","ошибка!!",JOptionPane.WARNING_MESSAGE);
+                }
                 setVisible(false);
                 dispose();
             }

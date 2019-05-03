@@ -12,15 +12,29 @@ public class ArcherMaker implements Creatable {
         try {
             if (data.size() != 8)
                 return -1;
-            String Name = data.get(0).toString();
-            String Surname = data.get(1).toString();
-            int Age = Integer.parseInt(data.get(2).toString());
-            SexPool Sex = SexPool.values()[Integer.parseInt(data.get(3).toString())];
-            int ServiceTime = Integer.parseInt(data.get(4).toString());
-            int Salary = Integer.parseInt(data.get(5).toString());
-            int FiringDistance = Integer.parseInt(data.get(6).toString());
-            int FiringSpeed = Integer.parseInt(data.get(7).toString());
-            return new Archer(Name,Surname,Age,Sex,ServiceTime,Salary,FiringDistance,FiringSpeed);
+            String name = data.get(0).toString();
+            if (name.matches("\\d+"))
+                return -1;
+            String surname = data.get(1).toString();
+            if (surname.matches("\\d+"))
+                return -1;
+            int age = Integer.parseInt(data.get(2).toString());
+            if (age < 16 || age > 100)
+                return -1;
+            SexPool sex = SexPool.values()[Integer.parseInt(data.get(3).toString())];
+            int serviceTime = Integer.parseInt(data.get(4).toString());
+            if (serviceTime < 0)
+                return -1;
+            int salary = Integer.parseInt(data.get(5).toString());
+            if (salary < 0)
+                return -1;
+            int firingDistance = Integer.parseInt(data.get(6).toString());
+            if (firingDistance < 0)
+                return -1;
+            int firingSpeed = Integer.parseInt(data.get(7).toString());
+            if (firingSpeed < 0)
+                return -1;
+            return new Archer(name,surname,age,sex,serviceTime,salary,firingDistance,firingSpeed);
         } catch (Exception e) {
             e.printStackTrace();
             return -1;
@@ -33,14 +47,28 @@ public class ArcherMaker implements Creatable {
             if (data.size() != 9)
                 return -1;
             Archer object = (Archer) data.get(0);
-            String name = data.get(1).toString();
-            String surname = data.get(2).toString();
-            int age = Integer.parseInt(data.get(3).toString());
-            SexPool sex = SexPool.values()[Integer.parseInt(data.get(4).toString())];
-            int serviceTime = Integer.parseInt(data.get(5).toString());
-            int salary = Integer.parseInt(data.get(6).toString());
-            int firingDistance = Integer.parseInt(data.get(7).toString());
-            int firingSpeed = Integer.parseInt(data.get(8).toString());
+            String name = data.get(0).toString();
+            if (name.matches("\\d+"))
+                return -1;
+            String surname = data.get(1).toString();
+            if (surname.matches("\\d+"))
+                return -1;
+            int age = Integer.parseInt(data.get(2).toString());
+            if (age < 16 || age > 100)
+                return -1;
+            SexPool sex = SexPool.values()[Integer.parseInt(data.get(3).toString())];
+            int serviceTime = Integer.parseInt(data.get(4).toString());
+            if (serviceTime < 0)
+                return -1;
+            int salary = Integer.parseInt(data.get(5).toString());
+            if (salary < 0)
+                return -1;
+            int firingDistance = Integer.parseInt(data.get(6).toString());
+            if (firingDistance < 0)
+                return -1;
+            int firingSpeed = Integer.parseInt(data.get(7).toString());
+            if (firingSpeed < 0)
+                return -1;
             object.setName(name);
             object.setSurname(surname);
             object.setAge(age);
