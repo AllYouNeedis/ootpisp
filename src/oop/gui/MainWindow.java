@@ -17,10 +17,10 @@ public class MainWindow extends JFrame {
 
     private ApplicationDataContext objects;
 
-    public MainWindow(ApplicationDataContext data, ObjectManipulator objectManipulator) {
+    public MainWindow(ObjectManipulator objectManipulator) {
         super("oop");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        objects = data;
+        objects = objectManipulator.getDataContext();
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout(5,5));
 
