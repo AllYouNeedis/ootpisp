@@ -1,6 +1,8 @@
 package oop.objects;
 
-public abstract class Soilder extends Human {
+import java.io.Serializable;
+
+public abstract class Soilder extends Human implements Serializable {
     private int ServiceTime;
     private int Salary;
 
@@ -9,6 +11,8 @@ public abstract class Soilder extends Human {
         ServiceTime = serviceTime;
         Salary = salary;
     }
+
+    public Soilder(){}
 
     public int getServiceTime() {
         return ServiceTime;

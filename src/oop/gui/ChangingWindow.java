@@ -28,8 +28,7 @@ public class ChangingWindow extends JDialog {
         JPanel MainPanel = new JPanel();
         MainPanel.setLayout(new GridLayout(Fields.size()+1,3,20,20));
         for (Field field: Fields) {
-            if (!field.isAccessible())
-                field.setAccessible(true);
+            field.setAccessible(true);
             Class<?> type = field.getType();
             JLabel label = new JLabel(field.getName());
             MainPanel.add(label);
@@ -88,7 +87,12 @@ public class ChangingWindow extends JDialog {
                     MainPanel.add(Lists.get(i));
                 } else {
                     TextFields.put(i, new JTextField(20));
-                    TextFields.get(i).setText(field.get(object).toString());
+                    JTextField textField = TextFields.get(i);
+                    Object o = field.get(object);
+                    if (o == null)
+                        textField.setText("");
+                    else
+                        textField.setText(field.get(object).toString());
                     MainPanel.add(TextFields.get(i));
                 }
             } catch (IllegalAccessException e) {

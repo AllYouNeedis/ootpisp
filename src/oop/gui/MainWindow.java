@@ -3,28 +3,72 @@ package oop.gui;
 import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
+import oop.serialization.*;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.util.ArrayList;
 
 public class MainWindow extends JFrame {
     private DefaultListModel listModel;
     private JList list;
 
-    private ApplicationDataContext objects;
+    private ObjectManipulator objectManipulator;
 
     public MainWindow(ObjectManipulator objectManipulator) {
         super("oop");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        objects = objectManipulator.getDataContext();
+        this.objectManipulator = objectManipulator;
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout(5,5));
 
         listModel = new DefaultListModel();
+
+        JMenuBar menuBar = new JMenuBar();
+        JMenu fileMenu = new JMenu("File");
+        menuBar.add(fileMenu);
+
+        JMenu saveMenu = new JMenu("Save as..");
+        fileMenu.add(saveMenu);
+
+        JMenuItem binarySaveItem = new JMenuItem(supportedFileFormats.yan.name());
+        saveMenu.add(binarySaveItem);
+        addSaveListener(binarySaveItem,supportedFileFormats.bin,objectManipulator);
+
+        JMenuItem jsonSaveItem = new JMenuItem(supportedFileFormats.xml.name());
+        saveMenu.add(jsonSaveItem);
+        addSaveListener(jsonSaveItem,supportedFileFormats.xml,objectManipulator);
+
+        JMenuItem yanSaveItem = new JMenuItem(supportedFileFormats.yan.name());
+        saveMenu.add(yanSaveItem);
+        addSaveListener(yanSaveItem,supportedFileFormats.yan,objectManipulator);
+
+        JMenuItem loadMenuItem = new JMenuItem("Load");
+        fileMenu.add(loadMenuItem);
+        loadMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fileChooser = new JFileChooser(new File(System.getProperty("user.dir")));
+                FileNameExtensionFilter filterBin = new FileNameExtensionFilter(supportedFileFormats.yan.name(),supportedFileFormats.bin.name());
+                FileNameExtensionFilter filterJSON = new FileNameExtensionFilter(supportedFileFormats.xml.name(),supportedFileFormats.xml.name());
+                FileNameExtensionFilter filterYan = new FileNameExtensionFilter(supportedFileFormats.yan.name(),supportedFileFormats.yan.name());
+                fileChooser.setFileFilter(filterBin);
+                fileChooser.setFileFilter(filterJSON);
+                fileChooser.setFileFilter(filterYan);
+                int ret = fileChooser.showDialog(MainWindow.this,"Открыть файл");
+                if (ret == JFileChooser.APPROVE_OPTION) {
+                    Deserializator deserializator = new Deserializator(objectManipulator);
+                    deserializator.deserialize(fileChooser.getSelectedFile().toString());
+                    redraw();
+                }
+            }
+        });
 
         list = new JList(listModel);
         mainPanel.add(new JScrollPane(list), BorderLayout.CENTER);
@@ -34,12 +78,12 @@ public class MainWindow extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
                     int index = list.locationToIndex(e.getPoint());
-                    Object object = objects.getObjects().get(index);
-                    String[] a = object.getClass().getTypeName().split("[.]");
+                    Object object = objectManipulator.getDataContext().getObjects().get(index);
+                    //String[] a = .split("[.]");
                     WindowContext context = new WindowContext(object);
                     ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,object,objectManipulator);
                     window.setSize(600,400);
-                    window.AddButtonAction(object,CreatableObjects.valueOf(a[a.length-1]),objectManipulator);
+                    window.AddButtonAction(object,CreatableObjects.valueOf(object.getClass().getSimpleName()),objectManipulator);
                     Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
                     window.setLocation(dim.width/2-window.getSize().width/2, dim.height/2-window.getSize().height/2);
                     window.setVisible(true);
@@ -74,15 +118,15 @@ public class MainWindow extends JFrame {
         removeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int index = list.getSelectedIndex();
-                if (index >= 0 && index < objects.getObjects().size()) {
-                    objects.removeElement(index);
+                if (index >= 0 && index < objectManipulator.getDataContext().getObjects().size()) {
+                    objectManipulator.getDataContext().removeElement(index);
                     redraw();
                 }
             }
         });
         removeButton.setFocusable(false);
         buttonPanel.add(removeButton,BorderLayout.EAST);
-
+        MainWindow.this.setJMenuBar(menuBar);
         pack();
         getContentPane().add(mainPanel);
         this.setVisible(true);
@@ -90,10 +134,27 @@ public class MainWindow extends JFrame {
 
     private void redraw() {
         listModel.clear();
-        for (int i = 0; i < objects.getObjects().size(); i++) {
-            String[] a = objects.getObjects().get(i).getClass().getTypeName().split("[.]");
+        ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
+        for (int i = 0; i < objects.size(); i++) {
+            String[] a = objects.get(i).getClass().getTypeName().split("[.]");
             listModel.addElement((CreatableObjects.GetNameFromString(a[a.length-1])));
         }
+    }
+
+    private void addSaveListener(JMenuItem jMenuItem, supportedFileFormats type, ObjectManipulator objectManipulator) {
+        jMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Serializator serializator = new Serializator(objectManipulator);
+                JFileChooser fileChooser = new JFileChooser(new File(System.getProperty("user.dir")));
+                fileChooser.setDialogTitle("Сохранение файла");
+                fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                int ret = fileChooser.showDialog(MainWindow.this,"Сохранить файл");
+                if (ret == JFileChooser.APPROVE_OPTION) {
+                    serializator.serialize(type,fileChooser.getSelectedFile().toString().concat(".".concat(type.name())));
+                }
+            }
+        });
     }
 
 }

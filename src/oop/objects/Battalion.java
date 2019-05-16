@@ -1,8 +1,9 @@
 package oop.objects;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Battalion {
+public class Battalion implements Serializable {
     private String name;
     private ArrayList<Object> composition;
 
@@ -10,6 +11,8 @@ public class Battalion {
         composition = data;
         this.name = name;
     }
+
+    public Battalion(){}
 
     public void setComposition(ArrayList<Object> composition) {
         this.composition = composition;

@@ -1,6 +1,8 @@
 package oop.objects;
 
-public abstract class Human {
+import java.io.Serializable;
+
+public abstract class Human implements Serializable {
     private String Name;
     private String Surname;
     private int Age;
@@ -12,6 +14,8 @@ public abstract class Human {
         Age = age;
         Sex = sex;
     }
+
+    public Human(){}
 
     public String getName() {
         return Name;

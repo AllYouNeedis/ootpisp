@@ -45,4 +45,8 @@ public class ObjectManipulator {
         }
         return result;
     }
+
+    public void setDataContext(ApplicationDataContext adc) {
+        this.DataContext = adc;
+    }
 }

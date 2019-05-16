@@ -1,6 +1,8 @@
 package oop.objects;
 
-public class Archer extends Soilder {
+import java.io.Serializable;
+
+public class Archer extends Soilder implements Serializable {
     private int FiringDistance;
     private int FiringSpeed;
 
@@ -8,6 +10,10 @@ public class Archer extends Soilder {
         super(name, surname, age, sex, serviceTime, salary);
         FiringDistance = firingDistance;
         FiringSpeed = firingSpeed;
+    }
+
+    public Archer() {
+
     }
 
     public int getFiringDistance() {

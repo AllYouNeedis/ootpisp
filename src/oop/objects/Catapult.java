@@ -1,6 +1,8 @@
 package oop.objects;
 
-public class Catapult {
+import java.io.Serializable;
+
+public class Catapult implements Serializable {
     private int Number;
     private int FiringDistance;
     private int FiringSpeed;
@@ -10,6 +12,8 @@ public class Catapult {
         FiringDistance = firingDistance;
         FiringSpeed = firingSpeed;
     }
+
+    public Catapult(){}
 
     public int getNumber() {
         return Number;

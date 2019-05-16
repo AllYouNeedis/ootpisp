@@ -1,21 +1,17 @@
 package oop;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class ApplicationDataContext {
+public class ApplicationDataContext implements Serializable {
     private ArrayList<Object> objects;
 
-    ApplicationDataContext() {
-        objects = new ArrayList<>();
-    }
+    public ApplicationDataContext() {this.objects = new ArrayList<>();}
     public ArrayList<Object> getObjects() {
         return objects;
     }
-
-    public void addElement(Object element) {
-        objects.add(element);
-    }
+    public void setObjects(ArrayList<Object> objects) {this.objects = objects;}
 
     public void removeElement(int Index) {
         objects.remove(Index);
