@@ -1,52 +1,18 @@
 package oop.serialization;
 
 import oop.ObjectManipulator;
-
-import java.beans.XMLEncoder;
-import java.io.*;
+import java.util.HashMap;
 
 public class Serializator {
-    private ObjectManipulator objectManipulator;
-    public Serializator(ObjectManipulator objectManipulator) {
-        this.objectManipulator = objectManipulator;
+    private HashMap<supportedFileFormats,Serializate> serializators;
+    public Serializator() {
+        serializators = new HashMap<>();
+        serializators.put(supportedFileFormats.bin, new SerializationToBin());
+        serializators.put(supportedFileFormats.xml, new SerializationToXml());
+        serializators.put(supportedFileFormats.yan, new SerializationToYan());
     }
 
-    public void serialize(supportedFileFormats format, String filename) {
-
-        switch (format) {
-            case bin:
-                seriaizationToBin(objectManipulator,filename);
-                break;
-            case xml:
-                serializationToxml(objectManipulator,filename);
-                break;
-            case yan:
-
-        }
-    }
-
-    private void seriaizationToBin(ObjectManipulator objectManipulator,String filename) {
-        try {
-            FileOutputStream fos = new FileOutputStream(filename);
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(objectManipulator.getDataContext());
-            oos.flush();
-            oos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void serializationToxml(ObjectManipulator objectManipulator,String filename) {
-        try {
-            FileOutputStream fos = new FileOutputStream(filename);
-            BufferedOutputStream bos = new BufferedOutputStream(fos);
-            XMLEncoder xmlEncoder = new XMLEncoder(bos);
-            xmlEncoder.writeObject(objectManipulator.getDataContext().getObjects());
-            xmlEncoder.flush();
-            xmlEncoder.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void serialize(supportedFileFormats format,ObjectManipulator objectManipulator, String filename) {
+        serializators.get(format).SerializateToFile(objectManipulator,filename);
     }
 }

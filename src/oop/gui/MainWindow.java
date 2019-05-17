@@ -1,6 +1,5 @@
 package oop.gui;
 
-import oop.ApplicationDataContext;
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
 import oop.serialization.*;
@@ -37,7 +36,7 @@ public class MainWindow extends JFrame {
         JMenu saveMenu = new JMenu("Save as..");
         fileMenu.add(saveMenu);
 
-        JMenuItem binarySaveItem = new JMenuItem(supportedFileFormats.yan.name());
+        JMenuItem binarySaveItem = new JMenuItem(supportedFileFormats.bin.name());
         saveMenu.add(binarySaveItem);
         addSaveListener(binarySaveItem,supportedFileFormats.bin,objectManipulator);
 
@@ -55,7 +54,7 @@ public class MainWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFileChooser fileChooser = new JFileChooser(new File(System.getProperty("user.dir")));
-                FileNameExtensionFilter filterBin = new FileNameExtensionFilter(supportedFileFormats.yan.name(),supportedFileFormats.bin.name());
+                FileNameExtensionFilter filterBin = new FileNameExtensionFilter(supportedFileFormats.bin.name(),supportedFileFormats.bin.name());
                 FileNameExtensionFilter filterJSON = new FileNameExtensionFilter(supportedFileFormats.xml.name(),supportedFileFormats.xml.name());
                 FileNameExtensionFilter filterYan = new FileNameExtensionFilter(supportedFileFormats.yan.name(),supportedFileFormats.yan.name());
                 fileChooser.setFileFilter(filterBin);
@@ -63,8 +62,8 @@ public class MainWindow extends JFrame {
                 fileChooser.setFileFilter(filterYan);
                 int ret = fileChooser.showDialog(MainWindow.this,"Открыть файл");
                 if (ret == JFileChooser.APPROVE_OPTION) {
-                    Deserializator deserializator = new Deserializator(objectManipulator);
-                    deserializator.deserialize(fileChooser.getSelectedFile().toString());
+                    Deserializator deserializator = new Deserializator();
+                    deserializator.deserialize(objectManipulator,fileChooser.getSelectedFile().toString());
                     redraw();
                 }
             }
@@ -79,7 +78,6 @@ public class MainWindow extends JFrame {
                 if (e.getClickCount() == 2) {
                     int index = list.locationToIndex(e.getPoint());
                     Object object = objectManipulator.getDataContext().getObjects().get(index);
-                    //String[] a = .split("[.]");
                     WindowContext context = new WindowContext(object);
                     ChangingWindow window = new ChangingWindow(context.getAllFields(),MainWindow.this,object,objectManipulator);
                     window.setSize(600,400);
@@ -145,13 +143,13 @@ public class MainWindow extends JFrame {
         jMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Serializator serializator = new Serializator(objectManipulator);
+                Serializator serializator = new Serializator();
                 JFileChooser fileChooser = new JFileChooser(new File(System.getProperty("user.dir")));
                 fileChooser.setDialogTitle("Сохранение файла");
                 fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 int ret = fileChooser.showDialog(MainWindow.this,"Сохранить файл");
                 if (ret == JFileChooser.APPROVE_OPTION) {
-                    serializator.serialize(type,fileChooser.getSelectedFile().toString().concat(".".concat(type.name())));
+                    serializator.serialize(type,objectManipulator,fileChooser.getSelectedFile().toString().concat(".".concat(type.name())));
                 }
             }
         });

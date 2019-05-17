@@ -21,7 +21,7 @@ public class SwordmanMaker implements Creatable {
             int age = Integer.parseInt(data.get(2).toString());
             if (age < 16 || age > 100)
                 return -1;
-            SexPool sex = SexPool.values()[Integer.parseInt(data.get(3).toString())];
+            SexPool sex = SexPool.valueOf(data.get(3).toString());
             int serviceTime = Integer.parseInt(data.get(4).toString());
             if (serviceTime < 0)
                 return -1;
@@ -52,7 +52,7 @@ public class SwordmanMaker implements Creatable {
             int age = Integer.parseInt(data.get(3).toString());
             if (age < 16 || age > 100)
                 return -1;
-            SexPool sex = SexPool.values()[Integer.parseInt(data.get(4).toString())];
+            SexPool sex = SexPool.valueOf(data.get(4).toString());
             int serviceTime = Integer.parseInt(data.get(5).toString());
             if (serviceTime < 0)
                 return -1;

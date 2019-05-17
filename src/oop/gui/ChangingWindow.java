@@ -121,7 +121,7 @@ public class ChangingWindow extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 HashMap<Integer,Object> Data = new HashMap<>();
                 for (Map.Entry<Integer,JComboBox> entry : ComboBoxes.entrySet()) {
-                    Data.put(entry.getKey(),entry.getValue().getSelectedIndex());
+                    Data.put(entry.getKey(),SexPool.values()[entry.getValue().getSelectedIndex()]);
                 }
                 for (Map.Entry<Integer,JTextField> entry : TextFields.entrySet()) {
                     Data.put(entry.getKey(),entry.getValue().getText());
