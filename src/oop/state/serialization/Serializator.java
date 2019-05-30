@@ -1,10 +1,12 @@
-package oop.serialization;
+package oop.state.serialization;
 
 import oop.ObjectManipulator;
+import oop.state.supportedFileFormats;
+
 import java.util.HashMap;
 
 public class Serializator {
-    private HashMap<supportedFileFormats,Serializate> serializators;
+    private HashMap<supportedFileFormats, Serializate> serializators;
     public Serializator() {
         serializators = new HashMap<>();
         serializators.put(supportedFileFormats.bin, new SerializationToBin());

@@ -1,8 +1,7 @@
-package oop.serialization;
+package oop.state.deserialization;
 
 import oop.ApplicationDataContext;
 import oop.ObjectManipulator;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;

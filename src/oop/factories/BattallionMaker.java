@@ -13,7 +13,7 @@ public class BattallionMaker implements Creatable {
             if (data.size() != 2)
                 return -1;
             String name = data.get(0).toString();
-            if (name.matches("\\d++"))
+            if (!name.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             ArrayList<Object> links = (ArrayList<Object>)(data.get(1));
             return new Battalion(links,name);
@@ -30,7 +30,7 @@ public class BattallionMaker implements Creatable {
                 return -1;
             Battalion object = (Battalion)data.get(0);
             String name = data.get(1).toString();
-            if (name.matches("\\d+"))
+            if (!name.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             ArrayList<Object> links = (ArrayList<Object>)(data.get(2));
             object.setComposition(links);

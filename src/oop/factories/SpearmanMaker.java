@@ -13,10 +13,10 @@ public class SpearmanMaker implements Creatable {
             if (data.size() != 7)
                 return -1;
             String name = data.get(0).toString();
-            if (name.matches("\\d+"))
+            if (!name.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             String surname = data.get(1).toString();
-            if (surname.matches("\\d+"))
+            if (!surname.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             int age = Integer.parseInt(data.get(2).toString());
             if (age < 16 || age > 100)
@@ -44,10 +44,10 @@ public class SpearmanMaker implements Creatable {
                 return -1;
             Spearman object = (Spearman) data.get(0);
             String name = data.get(1).toString();
-            if (name.matches("\\d+"))
+            if (!name.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             String surname = data.get(2).toString();
-            if (surname.matches("\\d+"))
+            if (!surname.matches("[а-яёА-ЯЁ]+"))
                 return -1;
             int age = Integer.parseInt(data.get(3).toString());
             if (age < 16 || age > 100)

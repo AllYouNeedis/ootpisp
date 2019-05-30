@@ -22,6 +22,10 @@ public class Battalion implements Serializable {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public ArrayList<Object> getComposition() {
         return composition;
     }

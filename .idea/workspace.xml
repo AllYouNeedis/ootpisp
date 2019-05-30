@@ -2,34 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d03dacd4-1802-4c5e-b3d7-43a27b0ded98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/Deserializate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/DeserializationFromBin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/DeserializationFromXml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/DeserializationFromYan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/FieldGetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/Serializate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/SerializationToBin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/SerializationToXml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop/serialization/SerializationToYan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/exception/CustomException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/factories/ArcherMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/ArcherMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/factories/BattallionMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/BattallionMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/factories/SpearmanMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/SpearmanMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/factories/SwordmanMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/factories/SwordmanMaker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/gui/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Deserializator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Deserializator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Deserializator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Serializator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Serializator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Serializator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Deserializate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/DeserializationFromBin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/DeserializationFromXml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/DeserializationFromYan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/DeserializationItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Deserializator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/FieldGetter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Serializate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/SerializationToBin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/SerializationToXml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/SerializationToYan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/Serializator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/oop/serialization/supportedFileFormats.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/factories/BattallionMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/factories/BattallionMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/gui/AddingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/gui/AddingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/oop/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/gui/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/serialization/Deserializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/serialization/Deserializator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/serialization/Serializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/serialization/Serializator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/objects/Battalion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/objects/Battalion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/FieldGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/FieldGetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/deserialization/Deserializate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/deserialization/Deserializate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromBin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromBin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromYan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromYan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/deserialization/Deserializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/deserialization/Deserializator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/serialization/Serializate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/serialization/Serializate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToBin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToBin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToYan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/serialization/SerializationToYan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/serialization/Serializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/serialization/Serializator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop/state/supportedFileFormats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop/state/supportedFileFormats.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,9 +71,11 @@
     <session id="-901875008">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.66" value="1" />
@@ -68,31 +85,31 @@
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="143" />
-          <entry key="java" value="30042" />
+          <entry key="java" value="30322" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="30042" />
+          <entry key="JAVA" value="30322" />
           <entry key="PLAIN_TEXT" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="348" />
+          <entry key="java" value="384" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="348" />
+          <entry key="JAVA" value="384" />
         </counts>
       </usages-collector>
     </session>
@@ -100,56 +117,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oop/gui/MainWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="79" column="95" selection-start-line="79" selection-start-column="95" selection-end-line="79" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oop/serialization/Deserializate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/oop/serialization/DeserializationFromYan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#DeserializationItem#0;class#DeserializationItem#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oop/factories/Factory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="58" column="66" lean-forward="true" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
+            <state relative-caret-position="238">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,11 +131,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oop/factories/BattallionMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="204">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oop/factories/CatapultMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -172,11 +152,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oop/objects/Battalion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="235">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/SerializationToXml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oop/objects/Catapult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -184,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,10 +203,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oop/gui/ChangingWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+            <state relative-caret-position="765">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,13 +215,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/oop/gui/AddingWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/SerializationToYan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="459">
+              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/oop/objects/Archer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -242,16 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/SpearmanMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/SwordmanMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/ArcherMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/SoilderMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/Creatable.java" />
-        <option value="$PROJECT_DIR$/src/oop/abstractFactory/factories/Factory.java" />
-        <option value="$PROJECT_DIR$/src/factory/Factory.java" />
-        <option value="$PROJECT_DIR$/src/oop/SimpleFrame.java" />
-        <option value="$PROJECT_DIR$/src/oop/objects/FactorySoilder.java" />
-        <option value="$PROJECT_DIR$/src/oop/AddingObject.java" />
         <option value="$PROJECT_DIR$/src/oop/ObjectFactory.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/mainWindow.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/GetWindowContext.java" />
@@ -261,7 +269,6 @@
         <option value="$PROJECT_DIR$/src/oop/factories/Creatable.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/WindowContext.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/Factory.java" />
-        <option value="$PROJECT_DIR$/src/oop/factories/BattallionMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/CatapultMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/Main.java" />
         <option value="$PROJECT_DIR$/src/oop/serialization/serializator.java" />
@@ -273,7 +280,6 @@
         <option value="$PROJECT_DIR$/src/oop/objects/Catapult.java" />
         <option value="$PROJECT_DIR$/src/oop/objects/Spearman.java" />
         <option value="$PROJECT_DIR$/src/oop/objects/Swordman.java" />
-        <option value="$PROJECT_DIR$/src/oop/objects/Battalion.java" />
         <option value="$PROJECT_DIR$/src/oop/ApplicationDataContext.java" />
         <option value="$PROJECT_DIR$/src/oop/serialization/supportedFileFormats.java" />
         <option value="$PROJECT_DIR$/src/oop/serialization/Serializate.java" />
@@ -288,11 +294,23 @@
         <option value="$PROJECT_DIR$/src/oop/serialization/SerializationToYan.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/AddingWindow.java" />
         <option value="$PROJECT_DIR$/src/oop/gui/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" />
+        <option value="$PROJECT_DIR$/src/oop/serialization/DeserializationFromYan.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/DeserializationFromYan.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/deserialization/Deserializate.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromXml.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/serialization/SerializationToBin.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromBin.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromYan.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/deserialization/Deserializator.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/serialization/Serializator.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/serialization/SerializationToYan.java" />
+        <option value="$PROJECT_DIR$/src/oop/factories/BattallionMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/ArcherMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java" />
         <option value="$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java" />
-        <option value="$PROJECT_DIR$/src/oop/gui/ChangingWindow.java" />
-        <option value="$PROJECT_DIR$/src/oop/serialization/DeserializationFromYan.java" />
+        <option value="$PROJECT_DIR$/src/oop/objects/Battalion.java" />
+        <option value="$PROJECT_DIR$/src/oop/state/serialization/SerializationToXml.java" />
       </list>
     </option>
   </component>
@@ -365,6 +383,31 @@
               <item name="lab2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+              <item name="deserialization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+              <item name="deserialization" type="462c0819:PsiDirectoryNode" />
+              <item name="DeserializationFromYan.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="lab2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
               <item name="serialization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,7 +427,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558079075917" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559208409345" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -440,12 +483,14 @@
       <workItem from="1556810217857" duration="23754000" />
       <workItem from="1557940556966" duration="11018000" />
       <workItem from="1558004509834" duration="8323000" />
-      <workItem from="1558019037373" duration="24958000" />
+      <workItem from="1558019037373" duration="25672000" />
+      <workItem from="1558086706936" duration="6235000" />
+      <workItem from="1559207868130" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158104000" />
+    <option name="totallyTimeSpent" value="165582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +505,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20801815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -476,7 +521,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.16202946" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.507365" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924356" weight="0.20785597" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924356" weight="0.05400982" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.45171848" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24549918" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -547,17 +592,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/exception/CustomException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/exception/CustomException.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/stream/JsonReader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -569,13 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/objects/Catapult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -607,112 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/Creatable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/Serializate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/SerializationToBin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/SerializationToXml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/DeserializationFromBin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/DeserializationFromXml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/FieldGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/gui/WindowContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/supportedFileFormats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/Deserializator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/Serializator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="78" lean-forward="true" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/SerializationToYan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" column="69" lean-forward="true" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,21 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/objects/Archer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/ApplicationDataContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,10 +677,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/gui/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="79" column="95" selection-start-line="79" selection-start-column="95" selection-end-line="79" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/gui/AddingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/Serializate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/FieldGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/supportedFileFormats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/ObjectManipulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
@@ -774,117 +730,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/CatapultMaker.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/Creatable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        <state relative-caret-position="136">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/gui/ChangingWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="58" column="66" lean-forward="true" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/gui/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="79" column="95" selection-start-line="79" selection-start-column="95" selection-end-line="79" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/Deserializate.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/state/deserialization/Deserializate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/gui/AddingWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/gui/ChangingWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="346">
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/deserialization/Deserializator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/Serializator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromBin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/SerializationToBin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/deserialization/DeserializationFromYan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#DeserializationItem#0;class#DeserializationItem#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/ArcherMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/objects/Catapult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/factories/SpearmanMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="765">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/factories/Factory.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/SwordmanMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="765">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/SerializationToYan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/objects/Archer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/oop/objects/Battalion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/oop/factories/BattallionMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/objects/Battalion.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/factories/CatapultMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oop/serialization/DeserializationFromYan.java">
+    <entry file="file://$PROJECT_DIR$/src/oop/state/serialization/SerializationToXml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#DeserializationItem#0;class#DeserializationItem#0" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,4 @@
-package oop.serialization;
+package oop.state;
 
 public enum supportedFileFormats {
     bin,

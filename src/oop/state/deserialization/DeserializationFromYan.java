@@ -1,4 +1,4 @@
-package oop.serialization;
+package oop.state.deserialization;
 
 import oop.ApplicationDataContext;
 import oop.CreatableObjects;
@@ -8,7 +8,6 @@ import oop.objects.Battalion;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -39,7 +38,6 @@ public class DeserializationFromYan implements Deserializate {
                 getObject(0, str);
                 Class myClass = Class.forName(thisObjectType);
                 CreatableObjects type = CreatableObjects.valueOf(myClass.getSimpleName());
-                ArrayList<Field> fields = FieldGetter.getObjectFields(myClass);
                 int i = 0;
                 for (Object field: objectFields) {
                     data.put(i,field);

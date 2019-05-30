@@ -1,4 +1,4 @@
-package oop.serialization;
+package oop.state;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

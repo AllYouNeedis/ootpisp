@@ -1,7 +1,6 @@
-package oop.serialization;
+package oop.state.serialization;
 
 import oop.ObjectManipulator;
-
 import java.beans.XMLEncoder;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;

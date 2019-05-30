@@ -2,7 +2,9 @@ package oop.gui;
 
 import oop.CreatableObjects;
 import oop.ObjectManipulator;
-import oop.serialization.*;
+import oop.state.*;
+import oop.state.deserialization.Deserializator;
+import oop.state.serialization.Serializator;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

@@ -1,4 +1,4 @@
-package oop.serialization;
+package oop.state.serialization;
 
 import oop.ObjectManipulator;
 

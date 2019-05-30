@@ -1,10 +1,12 @@
-package oop.serialization;
+package oop.state.deserialization;
 
 import oop.ObjectManipulator;
+import oop.state.supportedFileFormats;
+
 import java.util.HashMap;
 
 public class Deserializator {
-    private HashMap<supportedFileFormats,Deserializate> deserializators;
+    private HashMap<supportedFileFormats, Deserializate> deserializators;
 
     public Deserializator() {
         this.deserializators = new HashMap<>();
@@ -17,11 +19,12 @@ public class Deserializator {
         int lastIndexOf = filename.lastIndexOf('.');
         if (lastIndexOf == -1)
             return;
-        String ex = filename.substring(lastIndexOf+1);
-        supportedFileFormats extension = supportedFileFormats.valueOf(ex);
-        deserializators.get(extension).DeserializateFromFile(objectManipulator,filename);
+        try {
+            String ex = filename.substring(lastIndexOf+1);
+            supportedFileFormats extension = supportedFileFormats.valueOf(ex);
+            deserializators.get(extension).DeserializateFromFile(objectManipulator,filename);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
-
 }

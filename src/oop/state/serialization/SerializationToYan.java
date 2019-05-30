@@ -1,12 +1,12 @@
-package oop.serialization;
+package oop.state.serialization;
 
 import oop.ObjectManipulator;
+import oop.state.FieldGetter;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SerializationToYan implements Serializate {
     @Override
@@ -28,7 +28,10 @@ public class SerializationToYan implements Serializate {
                     fileWriter.write("\"".concat(fieldType).concat("\""));
                     fileWriter.write(":");
                     Object d = field.get(object);
-                    fileWriter.write(d.toString());
+                    if (d == null)
+                        fileWriter.write("");
+                    else
+                        fileWriter.write(d.toString());
                     if (!field.equals(fields.get(fields.size() - 1)))
                         fileWriter.write(",");
                 }
