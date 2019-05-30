@@ -5,11 +5,13 @@ import oop.CreatableObjects;
 import oop.ObjectManipulator;
 import oop.factories.Factory;
 import oop.objects.Battalion;
+import pluginInterface.CiphPluginInterface;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class DeserializationFromYan implements Deserializate {
     private String thisObjectType;
@@ -23,17 +25,31 @@ public class DeserializationFromYan implements Deserializate {
     private ArrayList<DeserializationItem> deserializationItems = new ArrayList<>();
 
     @Override
-    public void DeserializateFromFile(ObjectManipulator objectManipulator, String filename) {
+    public void DeserializateFromFile(ObjectManipulator objectManipulator, String filename, CiphPluginInterface plugin) {
         try {
             Factory factory = new Factory();
-            FileReader fileReader = new FileReader(filename);
-            BufferedReader br = new BufferedReader(fileReader);
-            String str = br.readLine();
+            File file = new File(filename);
+            FileInputStream fis = new FileInputStream(filename);
+            BufferedInputStream bis;
+            if (plugin == null) {
+                bis = new BufferedInputStream(fis);
+            } else {
+                bis = new BufferedInputStream(plugin.getInputStream(fis));
+            }
+
+            byte[] dat = new byte[(int) file.length()];
+            bis.read(dat);
+            bis.close();
+            String superdat = new String(dat,"UTF-8");
+            String[] content = superdat.split("\n");
+            String str;
             ApplicationDataContext adc = new ApplicationDataContext();
             ArrayList<Object> objects = new ArrayList<Object>();
-            if (!str.equals("'yan'"))
+            if (!content[0].equals("'yan'"))
                 return;
-            while ((str = br.readLine()) != null) {
+            int j = 1;
+            while (j < content.length) {
+                str = content[j];
                 HashMap<Integer,Object> data = new HashMap<>();
                 getObject(0, str);
                 Class myClass = Class.forName(thisObjectType);
@@ -49,6 +65,7 @@ public class DeserializationFromYan implements Deserializate {
                 objects.add(newObject);
                 objectFields.clear();
                 objectRefs = new ArrayList<>();
+                j++;
             }
             adc.setObjects(objects);
             objectManipulator.setDataContext(adc);

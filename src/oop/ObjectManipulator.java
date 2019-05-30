@@ -2,6 +2,7 @@ package oop;
 
 import oop.factories.Factory;
 import oop.objects.Battalion;
+import pluginInterface.CiphPluginInterface;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import java.util.HashMap;
 public class ObjectManipulator {
     private final Factory ObjectFactory = new Factory();
     private ApplicationDataContext DataContext;
+    private ArrayList<CiphPluginInterface> pluginsPull = new ArrayList<>();
     public int add(CreatableObjects E, HashMap<Integer,Object> Data) {
         Object NewObject = ObjectFactory.createObject(E,Data);
         if (NewObject.equals(-1)) {
@@ -26,6 +28,14 @@ public class ObjectManipulator {
         } else {
             return 0;
         }
+    }
+
+    public void setPluginsPull(ArrayList<CiphPluginInterface> pluginsPull) {
+        this.pluginsPull = pluginsPull;
+    }
+
+    public ArrayList<CiphPluginInterface> getPluginsPull(){
+        return pluginsPull;
     }
 
     ObjectManipulator(ApplicationDataContext dataContext) {

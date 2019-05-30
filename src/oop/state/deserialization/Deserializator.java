@@ -2,7 +2,9 @@ package oop.state.deserialization;
 
 import oop.ObjectManipulator;
 import oop.state.supportedFileFormats;
+import pluginInterface.CiphPluginInterface;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Deserializator {
@@ -16,15 +18,38 @@ public class Deserializator {
     }
 
     public void deserialize(ObjectManipulator objectManipulator, String filename) {
-        int lastIndexOf = filename.lastIndexOf('.');
-        if (lastIndexOf == -1)
+        int indexOf = filename.indexOf('.');
+        if (indexOf == -1)
             return;
         try {
-            String ex = filename.substring(lastIndexOf+1);
+            CiphPluginInterface plugin;
+            String ex = getFileFormat(filename,indexOf+1);
             supportedFileFormats extension = supportedFileFormats.valueOf(ex);
-            deserializators.get(extension).DeserializateFromFile(objectManipulator,filename);
+            String ciphFormat = getFileFormat(filename,filename.lastIndexOf('.')+1);
+            plugin = null;
+            if (!ciphFormat.equals(ex)) {
+                ArrayList<CiphPluginInterface> pluginsPull = objectManipulator.getPluginsPull();
+                for (CiphPluginInterface plug : pluginsPull) {
+                    if (plug.getExt().equals(ciphFormat)) {
+                        plugin = plug;
+                    }
+                }
+                if (plugin == null){
+                    return;
+                }
+            }
+            deserializators.get(extension).DeserializateFromFile(objectManipulator,filename,plugin);
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private String getFileFormat(String string,int index) {
+        int lastIndex = string.lastIndexOf('.');
+        if (index >= lastIndex) {
+            return string.substring(index);
+        }
+        String result = string.substring(index,lastIndex);
+        return result;
     }
 }

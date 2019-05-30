@@ -2,6 +2,7 @@ package oop.state.serialization;
 
 import oop.ObjectManipulator;
 import oop.state.supportedFileFormats;
+import pluginInterface.CiphPluginInterface;
 
 import java.util.HashMap;
 
@@ -14,7 +15,7 @@ public class Serializator {
         serializators.put(supportedFileFormats.yan, new SerializationToYan());
     }
 
-    public void serialize(supportedFileFormats format,ObjectManipulator objectManipulator, String filename) {
-        serializators.get(format).SerializateToFile(objectManipulator,filename);
+    public void serialize(CiphPluginInterface plugin, supportedFileFormats format, ObjectManipulator objectManipulator, String filename) {
+        serializators.get(format).SerializateToFile(objectManipulator,filename,plugin);
     }
 }
