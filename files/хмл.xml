@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_191" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="oop.objects.Catapult" id="Catapult0">
+    <void property="firingDistance">
+     <int>12</int>
+    </void>
+    <void property="firingSpeed">
+     <int>100</int>
+    </void>
+    <void property="number">
+     <int>12</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="oop.objects.Archer" id="Archer0">
+    <void property="age">
+     <int>19</int>
+    </void>
+    <void property="firingDistance">
+     <int>200</int>
+    </void>
+    <void property="firingSpeed">
+     <int>200</int>
+    </void>
+    <void property="name">
+     <string>петька</string>
+    </void>
+    <void property="salary">
+     <int>200</int>
+    </void>
+    <void property="serviceTime">
+     <int>200</int>
+    </void>
+    <void property="sex">
+     <object class="java.lang.Enum" id="SexPool0" method="valueOf">
+      <class>oop.objects.SexPool</class>
+      <string>MALE</string>
+     </object>
+    </void>
+    <void property="surname">
+     <string>васька</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="oop.objects.Spearman" id="Spearman0">
+    <void property="age">
+     <int>19</int>
+    </void>
+    <void property="name">
+     <string>васька</string>
+    </void>
+    <void property="salary">
+     <int>20</int>
+    </void>
+    <void property="serviceTime">
+     <int>20</int>
+    </void>
+    <void property="sex">
+     <object idref="SexPool0"/>
+    </void>
+    <void property="spearLength">
+     <int>20</int>
+    </void>
+    <void property="surname">
+     <string>петька</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="oop.objects.Battalion">
+    <void property="composition">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object idref="Archer0"/>
+      </void>
+      <void method="add">
+       <object class="oop.objects.Catapult" id="Catapult1">
+        <void property="firingDistance">
+         <int>22</int>
+        </void>
+        <void property="firingSpeed">
+         <int>22</int>
+        </void>
+        <void property="number">
+         <int>22</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>василий</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object idref="Catapult1"/>
+  </void>
+  <void method="add">
+   <object class="oop.objects.Battalion">
+    <void property="composition">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object idref="Catapult0"/>
+      </void>
+      <void method="add">
+       <object idref="Spearman0"/>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>петруха</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

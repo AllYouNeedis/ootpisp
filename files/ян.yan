@@ -1,0 +1,7 @@
+'yan'
+{oop.objects.Catapult@1ba339ad,"Number":12,"FiringDistance":12,"FiringSpeed":100}
+{oop.objects.Archer@7880ff2a,"Name":петька,"Surname":васька,"Age":19,"Sex":MALE,"ServiceTime":200,"Salary":200,"FiringDistance":200,"FiringSpeed":200}
+{oop.objects.Spearman@64a30399,"Name":васька,"Surname":петька,"Age":19,"Sex":MALE,"ServiceTime":20,"Salary":20,"SpearLength":20}
+{oop.objects.Battalion@21657bf8,"name":василий,"composition":[oop.objects.Archer@7880ff2a, oop.objects.Catapult@23094028]}
+{oop.objects.Catapult@23094028,"Number":22,"FiringDistance":22,"FiringSpeed":22}
+{oop.objects.Battalion@5c8f92cc,"name":петруха,"composition":[oop.objects.Catapult@1ba339ad, oop.objects.Spearman@64a30399]}

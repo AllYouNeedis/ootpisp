@@ -60,7 +60,7 @@ public class PluginLoader {
         return result;
     }
 
-    public static String getFileExtension(String name) {
+    private String getFileExtension(String name) {
         int index = name.lastIndexOf('.') + 1;
         if (index > 0) {
             String extension = name.substring(index);

@@ -4,6 +4,7 @@ import oop.ObjectManipulator;
 import oop.state.supportedFileFormats;
 import pluginInterface.CiphPluginInterface;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -35,6 +36,7 @@ public class Deserializator {
                     }
                 }
                 if (plugin == null){
+                    JOptionPane.showMessageDialog(null,"плагин для десериализации не загружен");
                     return;
                 }
             }

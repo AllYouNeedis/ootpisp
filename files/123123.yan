@@ -1,4 +1,0 @@
-'yan'
-{oop.objects.Catapult@610657e9,"Number":1,"FiringDistance":1,"FiringSpeed":1}
-{oop.objects.Catapult@4ebf3ad,"Number":2,"FiringDistance":2,"FiringSpeed":2}
-{oop.objects.Battalion@6b95c1cb,"name":петя,"composition":[oop.objects.Catapult@610657e9, oop.objects.Catapult@4ebf3ad]}

@@ -25,7 +25,6 @@ public class SerializationToYan implements Serializate {
             ArrayList<Object> objects = objectManipulator.getDataContext().getObjects();
             for (int i = 0; i < objects.size(); i++) {
                 Object object = objects.get(i);
-//            for (Object object : objectManipulator.getDataContext().getObjects()) {
                 fileWriter.write("{".getBytes());
                 Class myClass = object.getClass();
                 ArrayList<Field> fields = FieldGetter.getObjectFields(myClass);
